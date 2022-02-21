@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B5940D8727C31B130005787C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5940D8627C31B130005787C /* AppDelegate.swift */; };
 		B5940D8927C31B130005787C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5940D8827C31B130005787C /* SceneDelegate.swift */; };
-		B5940D8B27C31B130005787C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5940D8A27C31B130005787C /* ViewController.swift */; };
 		B5940D8E27C31B130005787C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5940D8C27C31B130005787C /* Main.storyboard */; };
 		B5940D9027C31B150005787C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5940D8F27C31B150005787C /* Assets.xcassets */; };
 		B5940D9327C31B150005787C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5940D9127C31B150005787C /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		B5940D8327C31B130005787C /* JournalApp-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JournalApp-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5940D8627C31B130005787C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5940D8827C31B130005787C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5940D8A27C31B130005787C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5940D8D27C31B130005787C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5940D8F27C31B150005787C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5940D9227C31B150005787C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				B5940D8527C31B130005787C /* JournalApp-2 */,
+				B5940D9A27C31B8F0005787C /* Models */,
 				B5940D8427C31B130005787C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +55,45 @@
 		B5940D8527C31B130005787C /* JournalApp-2 */ = {
 			isa = PBXGroup;
 			children = (
-				B5940D8627C31B130005787C /* AppDelegate.swift */,
-				B5940D8827C31B130005787C /* SceneDelegate.swift */,
-				B5940D8A27C31B130005787C /* ViewController.swift */,
-				B5940D8C27C31B130005787C /* Main.storyboard */,
-				B5940D8F27C31B150005787C /* Assets.xcassets */,
-				B5940D9127C31B150005787C /* LaunchScreen.storyboard */,
-				B5940D9427C31B150005787C /* Info.plist */,
+				B5940D9D27C31BB20005787C /* Resources */,
+				B5940D9C27C31BA30005787C /* Views */,
+				B5940D9B27C31B930005787C /* ViewControllers */,
 			);
 			path = "JournalApp-2";
+			sourceTree = "<group>";
+		};
+		B5940D9A27C31B8F0005787C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5940D9B27C31B930005787C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5940D9C27C31BA30005787C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5940D9127C31B150005787C /* LaunchScreen.storyboard */,
+				B5940D8C27C31B130005787C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5940D9D27C31BB20005787C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5940D8627C31B130005787C /* AppDelegate.swift */,
+				B5940D8827C31B130005787C /* SceneDelegate.swift */,
+				B5940D9427C31B150005787C /* Info.plist */,
+				B5940D8F27C31B150005787C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5940D8B27C31B130005787C /* ViewController.swift in Sources */,
 				B5940D8727C31B130005787C /* AppDelegate.swift in Sources */,
 				B5940D8927C31B130005787C /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVZJ4Z5QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "JournalApp-2/Info.plist";
+				INFOPLIST_FILE = "JournalApp-2/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVZJ4Z5QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "JournalApp-2/Info.plist";
+				INFOPLIST_FILE = "JournalApp-2/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
